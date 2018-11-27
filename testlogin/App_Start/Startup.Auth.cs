@@ -54,9 +54,9 @@ namespace testlogin
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1921679344616244",
+               appSecret: "828a1f78b3c43dcd2664b73a88c1714e");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

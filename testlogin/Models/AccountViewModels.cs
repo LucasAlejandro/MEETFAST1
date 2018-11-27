@@ -49,7 +49,7 @@ namespace testlogin.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Correo electrónico")]
+        [Display(Name = "Correo@Email")]
         [EmailAddress]
         public string Email { get; set; }
 

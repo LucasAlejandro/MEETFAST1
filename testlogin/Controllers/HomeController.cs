@@ -12,6 +12,10 @@ namespace testlogin.Controllers
         {
             return View();
         }
+        public ActionResult IndexMeet()
+        {
+            return View();
+        }
 
         public ActionResult About()
         {

@@ -2,17 +2,31 @@
 @{
     ViewBag.Title = "Registrarse";
 }
+<meta charset="ISO-8859-1" />
+<link href="~/Content/LogIn/stylesLogIn.css" rel="stylesheet" type="text/css" />
+<style>
+    .cardRegister {
+        text-shadow: 2px black;
+        color:white;
+        padding: 22px 22px;
+        height: 370px;
+        width: 600px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: rgba(5,5,5,0.5) !important;
+    }
 
+</style>
 <h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal cardRegister", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <h4>Cree una cuenta nueva.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label " })
         <div class="col-md-10">
             @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
